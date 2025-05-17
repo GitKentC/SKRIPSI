@@ -104,9 +104,9 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion Matrix'
 class_mapping = {0: 'COVID', 1: 'Lung_Opacity', 2: 'Normal', 3: 'Viral Pneumonia'}
 
 # Load your trained models (PATH SHOULD BE RE-CHECKED)
-mobilenet = load_model(r'.\MODELS\mobilenetv3small-COVID-19-94.95.keras')
-efficientnet = load_model(r'.\MODELS\efficientnetv2b0-COVID-19-95.81.keras')
-resnet = load_model(r'.\MODELS\resnet50v2-COVID-19-94.19.keras')
+mobilenet = load_model(r'./MODELS/mobilenetv3small-COVID-19-94.95.keras')
+efficientnet = load_model(r'./MODELS/efficientnetv2b0-COVID-19-95.81.keras')
+resnet = load_model(r'./MODELS/resnet50v2-COVID-19-94.19.keras')
 
 # Remove Streamlit's default menu and footer for a cleaner interface
 hide_streamlit_style = """
@@ -123,7 +123,7 @@ st.write("Upload either a single or multiple unlabeled chest X-ray image (PNG/JP
 st.write("or you can upload multiple labeled chest X-ray images to evaluate each model as instructed below")
 
 # Instruction
-file_ = open(r".\asset\instruction.gif", "rb")
+file_ = open(r"./asset/instruction.gif", "rb")
 contents = file_.read()
 data_url = base64.b64encode(contents).decode("utf-8")
 file_.close()

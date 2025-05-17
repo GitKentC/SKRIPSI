@@ -9,9 +9,9 @@ st.set_page_config(
 )
 
 # Path to the local image
-image_path = r".\asset\landingpg.png"
-btn1_path = r".\asset\githubbt.png"
-btn2_path = r".\asset\getstartedbt.png"
+image_path = r"./asset/landingpg.png"
+btn1_path = r"./asset/githubbt.png"
+btn2_path = r"./asset/getstartedbt.png"
 
 # Function to convert image to base64
 def image_to_base64(image_path):
