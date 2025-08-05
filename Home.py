@@ -77,7 +77,7 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Define the URLs to redirect to
-url1 = "https://github.com"
+url1 = "https://github.com/GitKentC/SKRIPSI"
 url2 = "/App" # redirects to page_title="App"
 
 st.markdown(f"""
